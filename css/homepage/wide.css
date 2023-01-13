@@ -1,0 +1,14 @@
+.restaurant__cards {
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 2%;
+  max-width: 100%;
+  width: 100%;
+}
+.restaurant__cards .card {
+  width: 48%;
+}
+.card__description {
+  width: 250px;
+  height: 190px;
+}
