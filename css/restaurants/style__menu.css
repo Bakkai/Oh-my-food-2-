@@ -1,3 +1,4 @@
+/********************************** Base **********************************/
 *,
 ::after,
 ::before {
@@ -83,9 +84,10 @@ a {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
+/********************************** Header **********************************/
 header {
   display: flex;
   justify-content: center;
@@ -105,7 +107,7 @@ header i {
   margin: 0 auto;
   padding: 20px;
 }
-
+/********************************** Main content **********************************/
 .background__image img {
   height: 250px;
   width: 100%;
@@ -135,18 +137,19 @@ header i {
   font-size: 26px;
   font-style: italic;
 }
-.menu__title i {
+.menu__title .fa-heart {
   right: 2rem;
   top: 2rem;
   font-size: 35px;
   font-weight: 400;
   position: absolute;
 }
-.fas:hover {
+.menu__title .fas:hover {
   opacity: 0;
 }
-.far:hover {
+.menu__title .fas:hover{
   opacity: 1;
+  font-weight: 900;
   color: transparent;
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
@@ -186,7 +189,6 @@ header i {
   align-items: center;
   cursor: pointer;
   overflow: hidden;
-  text-overflow: ellipsis;
   gap: 5px;
   position: relative;
 }
@@ -198,19 +200,12 @@ header i {
 .carte__body {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%; 
+  flex-grow: 1; 
   gap: 8px;
   padding: 10px;
 }
 
-.carte__titre {
-  display: flex;
-  flex: 100%;
-  white-space: nowrap;
-  flex-direction: column;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 .carte__titre h3 {
   margin-bottom: 0px;
   margin-top: 0px;
@@ -226,43 +221,46 @@ header i {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .carte__description p {
   margin: 0;
-  display: flex;
   flex-direction: column;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .carte__prix {
   margin-top: 2px;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
   font-weight: 900;
   margin-left: auto;
 }
 
 .carte__checkIcon {
-  background-color: transparent;
+  background-color: #99e2d0;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  justify-content: center;
   width: 0;
   transition: width 0.5s ease-in-out;
 }
 
-.carte__checkIcon:hover {
-  width: 5%;
-  background-color: #99e2d0;
+.carte__bouton:hover .carte__checkIcon {
+  width: 20%;
 }
 
 .carte__checkIcon i {
   color: white;
   font-size: 25px;
   display: flex;
-  padding-left: 10px;
-  animation: rotate 180deg 1s linear
+}
+
+.carte__bouton:hover .carte__checkIcon i {
+  animation: rotate 1s;
 }
 
 .btn__menu {
@@ -286,14 +284,13 @@ header i {
   max-width: 250px;
   cursor: pointer;
 }
-
+/********************************** Footer **********************************/
 footer {
   display: block;
   background-color: #353535;
   margin: 0;
   border: 0;
   font-size: 20px;
-  vertical-align: baseline;
   padding: 20px;
   color: #ffffff;
 }

@@ -1,4 +1,82 @@
-*,
+/********************************** Base **********************************/
+@-webkit-keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes rotate-icon {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+
+}*,
 ::after,
 ::before {
   box-sizing: border-box;
@@ -16,7 +94,7 @@ a {
   text-decoration: none;
   color: #000;
 }
-
+/********************************** Header **********************************/
 header {
   display: flex;
   flex-direction: column;
@@ -63,7 +141,7 @@ header input {
 .header__search i {
   font-weight: 900;
 }
-
+/********************************** Navigation Bar **********************************/
 .functionning {
   padding: 40px 20px;
   width: 95%;
@@ -159,7 +237,7 @@ header input {
   cursor: pointer;
   font-size: 18px;
 }
-
+/********************************** Main content **********************************/
 .reservation__title {
   font-size: 25px;
 }
@@ -256,14 +334,13 @@ header input {
   background-clip: text;
   transition: all 200ms ease-in-out;
 }
-
+/********************************** Footer **********************************/
 footer {
   display: block;
   background-color: #353535;
   margin: 0;
   border: 0;
   font-size: 20px;
-  vertical-align: baseline;
   padding: 20px;
   color: #ffffff;
 }
@@ -289,84 +366,7 @@ footer ul .fa-utensils {
 footer ul .fa-hands-helping {
   margin-right: 5px;
 }
-
-@-webkit-keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes load {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-@keyframes load {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@-webkit-keyframes rotate-icon {
-  0% {
-    transform: rotateZ(-180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-@keyframes rotate-icon {
-  0% {
-    transform: rotateZ(-180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
+/********************************** Loading Animations **********************************/
 .loading_page {
   position: fixed;
   height: 100%;
@@ -379,8 +379,8 @@ footer ul .fa-hands-helping {
   align-items: stretch;
   background-color: #ffffff;
   z-index: 2;
-  -webkit-animation: fadeout 6s forwards;
-  animation: fadeout 6s forwards;
+  -webkit-animation: fadeout 3s forwards;
+  animation: fadeout 3s forwards;
 }
 .loading_page .loader {
   position: fixed;
@@ -392,6 +392,6 @@ footer ul .fa-hands-helping {
   border-right: 16px solid #9356dc;
   top: 40%;
   transform: translateY(-50%);
-  -webkit-animation: load 2s infinite ease-out;
-  animation: load 2s infinite ease-out;
+  -webkit-animation: load 3s infinite ease-out;
+  animation: load 3s infinite ease-out;
 }
