@@ -75,8 +75,8 @@
   100% {
     transform: rotateZ(0deg);
   }
-
-}*,
+}
+*,
 ::after,
 ::before {
   box-sizing: border-box;

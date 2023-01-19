@@ -147,7 +147,7 @@ header i {
 .menu__title .fas:hover {
   opacity: 0;
 }
-.menu__title .fas:hover{
+.menu__title .fas:hover {
   opacity: 1;
   font-weight: 900;
   color: transparent;
@@ -200,8 +200,8 @@ header i {
 .carte__body {
   display: flex;
   flex-direction: column;
-  width: 80%; 
-  flex-grow: 1; 
+  width: 80%;
+  flex-grow: 1;
   gap: 8px;
   padding: 10px;
 }
