@@ -292,7 +292,7 @@ header input {
   opacity: 1;
   color: transparent;
   background: linear-gradient(#ff79da, #9356dc);
-  background-clip: text;
+  -webkit-background-clip: text;
   transition: all 200ms ease-in-out;
 }
 /********************************** Footer **********************************/
