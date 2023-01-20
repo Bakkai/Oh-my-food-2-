@@ -1,0 +1,16 @@
+.menu__title h1 {
+    font-size: 35px;
+    padding-left: 2vw;
+}
+.menu__choice h2 {
+    font-size: 33px;
+}
+.btn__menu {
+  -ms-transform: scale(1.9);
+  -webkit-transform: scale(1.9);
+  transform: scale(1.9);
+
+}
+footer {
+    text-align: center;
+}
