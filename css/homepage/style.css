@@ -1,13 +1,4 @@
 /********************************** Base **********************************/
-@-webkit-keyframes appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -26,29 +17,12 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes load {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
 @keyframes load {
   0% {
     transform: rotateZ(0deg);
   }
   100% {
     transform: rotateZ(360deg);
-  }
-}
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
   }
 }
 @keyframes fadeout {
@@ -58,14 +32,6 @@
   100% {
     opacity: 0;
     z-index: -1;
-  }
-}
-@-webkit-keyframes rotate-icon {
-  0% {
-    transform: rotateZ(-180deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
   }
 }
 @keyframes rotate-icon {
@@ -150,13 +116,9 @@ header input {
 .functionning h2 {
   display: block;
   font-size: 25px;
-  -webkit-margin-before: 10px;
   margin-block-start: 10px;
-  -webkit-margin-after: 10px;
   margin-block-end: 10px;
-  -webkit-margin-start: 0px;
   margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -330,7 +292,6 @@ header input {
   opacity: 1;
   color: transparent;
   background: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
   background-clip: text;
   transition: all 200ms ease-in-out;
 }
@@ -379,7 +340,6 @@ footer ul .fa-hands-helping {
   align-items: stretch;
   background-color: #ffffff;
   z-index: 2;
-  -webkit-animation: fadeout 3s forwards;
   animation: fadeout 3s forwards;
 }
 .loading_page .loader {
@@ -392,6 +352,5 @@ footer ul .fa-hands-helping {
   border-right: 16px solid #9356dc;
   top: 40%;
   transform: translateY(-50%);
-  -webkit-animation: load 3s infinite ease-out;
   animation: load 3s infinite ease-out;
 }
